@@ -1,0 +1,114 @@
+{
+  "name": "semantic-release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matejgerek/semantic-release.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matejgerek/semantic-release/issues"
+  },
+  "homepage": "https://github.com/matejgerek/semantic-release#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "semantic-release": "^20.1.0"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "staging"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "docs/CHANGELOG.md"
+          ]
+        }
+      ]
+    ],
+    "preset": "conventionalcommits",
+    "presetConfig": {
+      "types": [
+        {
+          "type": "feat",
+          "section": ":sparkles: Features",
+          "hidden": false
+        },
+        {
+          "type": "fix",
+          "section": ":bug: Bug Fixes",
+          "hidden": false
+        },
+        {
+          "type": "perf",
+          "section": ":zap: Performance Improvements",
+          "hidden": false
+        },
+        {
+          "type": "revert",
+          "section": ":rewind: Reverts",
+          "hidden": true
+        },
+        {
+          "type": "docs",
+          "section": ":books: Documentation",
+          "hidden": true
+        },
+        {
+          "type": "style",
+          "section": ":lipstick: Styles",
+          "hidden": true
+        },
+        {
+          "type": "chore",
+          "section": ":octopus: Miscellaneous Chores",
+          "hidden": true
+        },
+        {
+          "type": "refactor",
+          "section": ":recycle: Code Refactoring",
+          "hidden": true
+        },
+        {
+          "type": "test",
+          "section": ":white_check_mark: Tests",
+          "hidden": true
+        },
+        {
+          "type": "build",
+          "section": ":package: Build System",
+          "hidden": true
+        },
+        {
+          "type": "ci",
+          "section": ":construction_worker: Continuous Integration",
+          "hidden": true
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}
