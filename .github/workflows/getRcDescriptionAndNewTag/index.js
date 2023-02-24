@@ -9,9 +9,7 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
         const result = await semanticRelease({
             plugins: [
-                ["@semantic-release/release-notes-generator", {
-                    "preset": "conventionalcommits",
-                }],
+                "@semantic-release/release-notes-generator",
                 "@semantic-release/git"
                 ],
         },
