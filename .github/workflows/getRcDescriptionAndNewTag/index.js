@@ -24,3 +24,5 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
 }
 
 getRcDescriptionAndNewTagWithSemanticRelease();
+
+// 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
