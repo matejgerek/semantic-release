@@ -10,6 +10,10 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
             plugins: [
                 ["@semantic-release/release-notes-generator", {
                     writerOpts: {
+                        transform: async (commit) => {
+                          console.log(commit.author.email)
+                            return commit
+                        },
                         commitPartial: commitPartialHbs,
                     }
                 }],
@@ -17,6 +21,10 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
                 ],
         },
         );
+
+        if(!result) {
+            return
+        }
 
         console.log('semantic-release output test',result);
         core.setOutput('NEW_VERSION', result.nextRelease.version);
