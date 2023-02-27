@@ -1,6 +1,6 @@
 - [ ] {{subject}}
 
-{{~!-- commit link --}}
+{{! Commit link }}
 {{~#if @root.linkReferences}} ([{{hash}}](
 {{~#if @root.repository}}
     {{~#if @root.host}}
@@ -16,7 +16,7 @@
 {{~@root.commit}}/{{hash}}))
 {{~else if hash}} {{hash}}{{~/if}}
 
-{{~!-- commit references --}}
+{{! Commit references }}
 {{~#if references~}}
     , closes
     {{~#each references}} {{#if @root.linkReferences~}}
