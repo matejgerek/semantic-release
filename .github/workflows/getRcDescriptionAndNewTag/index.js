@@ -2,6 +2,7 @@ const core = require("@actions/core");
 const fs = require('fs');
 const path = require('path')
 
+
 const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
         const semanticRelease = await import('semantic-release');
