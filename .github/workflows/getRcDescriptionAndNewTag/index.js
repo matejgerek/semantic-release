@@ -1,10 +1,11 @@
 const core = require("@actions/core");
 const fs = require('fs');
+const path = require('path')
 
 const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
         const semanticRelease = await import('semantic-release');
-        const commitPartialHbs = fs.readFileSync('./commitPartial.hbs', 'utf8');
+        const commitPartialHbs = fs.readFileSync(path.join(__dirname, './commitPartial.hbs'), 'utf8');
         const result = await semanticRelease.default({
             plugins: [
                 ["@semantic-release/release-notes-generator", {
