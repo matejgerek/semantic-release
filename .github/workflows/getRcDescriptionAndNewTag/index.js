@@ -15,8 +15,7 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
                 }],
                 "@semantic-release/git"
                 ],
-        },
-        );
+        });
 
         if(!result) {
             return
