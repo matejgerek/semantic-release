@@ -1,10 +1,11 @@
 import semanticRelease from "semantic-release";
 import * as core from "@actions/core";
 import fs from 'fs';
+import * as path from "path";
 
 
 
-const commitPartial = fs.readFileSync('commitPartial.hbs', 'utf8');
+const commitPartial = fs.readSync(path.resolve(__dirname, 'commit.hbs'), 'utf-8');
 
 const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
