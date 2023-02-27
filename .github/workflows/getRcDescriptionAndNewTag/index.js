@@ -1,15 +1,20 @@
-import {exec} from "child_process";
-import {promisify} from "util";
 import semanticRelease from "semantic-release";
 import * as core from "@actions/core";
+import fs from 'fs';
 
-const execAsync = promisify(exec);
+
+
+const commitPartial = fs.readFileSync('commitPartial.hbs', 'utf8');
 
 const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
         const result = await semanticRelease({
             plugins: [
-                "@semantic-release/release-notes-generator",
+                ["@semantic-release/release-notes-generator", {
+                    writerOpts: {
+                        commitPartial,
+                    }
+                }],
                 "@semantic-release/git"
                 ],
         },
