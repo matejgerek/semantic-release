@@ -1,18 +1,16 @@
-import semanticRelease from "semantic-release";
-import * as core from "@actions/core";
-import fs from 'fs';
-
-
-
-const commitPartial = fs.readFileSync('commitPartial.hbs', 'utf8');
+const core = require("@actions/core");
+const fs = require('fs');
+const path = require('path')
 
 const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
     try {
-        const result = await semanticRelease({
+        const semanticRelease = await import('semantic-release');
+        const commitPartialHbs = fs.readFileSync(path.join(__dirname, './commitPartial.hbs'), 'utf8');
+        const result = await semanticRelease.default({
             plugins: [
                 ["@semantic-release/release-notes-generator", {
                     writerOpts: {
-                        commitPartial,
+                        commitPartial: commitPartialHbs,
                     }
                 }],
                 "@semantic-release/git"
@@ -20,7 +18,11 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
         },
         );
 
-        console.log(result);
+        if(!result) {
+            return
+        }
+
+        console.log('semantic-release output test',result);
         core.setOutput('NEW_VERSION', result.nextRelease.version);
         core.setOutput('NEW_CHANGES', result.nextRelease.notes);
     } catch (error) {
