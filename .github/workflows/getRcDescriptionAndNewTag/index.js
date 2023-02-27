@@ -1,7 +1,7 @@
-import semanticRelease from "semantic-release";
-import * as core from "@actions/core";
-import fs from 'fs';
-import * as path from "path";
+const semanticRelease = require('semantic-release');
+const core = require("@actions/core");
+const fs = require('fs');
+const path = require('path');
 
 
 
