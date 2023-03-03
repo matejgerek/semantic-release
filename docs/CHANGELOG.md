@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/matejgerek/semantic-release/compare/v1.6.1...v1.6.2) (2023-03-03)
+
+
+### :bug: Bug Fixes
+
+* test changelog append ([ebd5681](https://github.com/matejgerek/semantic-release/commit/ebd56817cd6d24c3376fa7c0614e74eef072820a))
+
 test
 
 ## [1.6.1](https://github.com/matejgerek/semantic-release/compare/v1.6.0...v1.6.1) (2023-03-03)
