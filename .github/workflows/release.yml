@@ -21,8 +21,6 @@ jobs:
         with:
           node-version: "lts/*"
           cache: 'npm'
-      - name: Install dependencies
-        run: npm install
       - name: Cache node_modules
         uses: actions/cache@v2
         env:
@@ -37,6 +35,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+      - name: Install dependencies
+        run: npm install
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
