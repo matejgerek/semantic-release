@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/matejgerek/semantic-release/compare/v1.2.1...v1.2.2) (2023-03-03)
+
+
+### :bug: Bug Fixes
+
+* format index.js ([4a64983](https://github.com/matejgerek/semantic-release/commit/4a6498312dfd53b5709f4cd3f8c741681b91c99b))
+
 ## [1.2.1](https://github.com/matejgerek/semantic-release/compare/v1.2.0...v1.2.1) (2023-02-27)
 
 
