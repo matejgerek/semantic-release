@@ -22,7 +22,6 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
             return
         }
 
-        console.log('semantic-release output test',result);
         core.setOutput('NEW_VERSION', result.nextRelease.version);
         core.setOutput('NEW_CHANGES', result.nextRelease.notes);
     } catch (error) {
