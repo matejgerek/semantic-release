@@ -51,7 +51,7 @@
     "presetConfig": {
       "types": [
         {
-          "type": "feat",
+          "type": "feature",
           "section": ":sparkles: Features",
           "hidden": false
         },
