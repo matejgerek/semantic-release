@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/matejgerek/semantic-release/compare/v1.3.1...v1.3.2) (2023-03-03)
+
+
+### :bug: Bug Fixes
+
+* remove console.log ([6a66237](https://github.com/matejgerek/semantic-release/commit/6a662373334456a9d4db7086865965d6423b5241))
+
 ## [1.2.3](https://github.com/matejgerek/semantic-release/compare/v1.2.2...v1.2.3) (2023-03-03)
 
 
