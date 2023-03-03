@@ -26,7 +26,10 @@
   "release": {
     "branches": [
       "main",
-      "staging"
+      {
+        "name": "staging",
+        "prerelease": true
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -51,7 +54,7 @@
     "presetConfig": {
       "types": [
         {
-          "type": "feature",
+          "type": "feat",
           "section": ":sparkles: Features",
           "hidden": false
         },
