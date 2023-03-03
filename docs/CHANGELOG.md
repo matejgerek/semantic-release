@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/matejgerek/semantic-release/compare/v1.5.0...v1.6.0) (2023-03-03)
+
+
+### :sparkles: Features
+
+* add node_modules caching ([4ef4a6c](https://github.com/matejgerek/semantic-release/commit/4ef4a6c9cd4bdf1f3f9f6bcae7ef4fda59a616f7))
+
 ## [1.5.0](https://github.com/matejgerek/semantic-release/compare/v1.4.0...v1.5.0) (2023-03-03)
 
 
