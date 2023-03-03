@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/matejgerek/semantic-release/compare/v1.2.2...v1.2.3) (2023-03-03)
+
+
+### :bug: Bug Fixes
+
+* change semantic-release version ([c9f2bbf](https://github.com/matejgerek/semantic-release/commit/c9f2bbf9b999241778932ddc7cabdae29ac24ebb))
+
 ## [1.2.2](https://github.com/matejgerek/semantic-release/compare/v1.2.1...v1.2.2) (2023-03-03)
 
 
