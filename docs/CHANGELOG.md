@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/matejgerek/semantic-release/compare/v1.3.2...v1.4.0) (2023-03-03)
+
+
+### :sparkles: Features
+
+* test prerelease ([77a1774](https://github.com/matejgerek/semantic-release/commit/77a17741dc8da4f1a9b05cc8cc5de953397740f4))
+
 ## [1.3.2](https://github.com/matejgerek/semantic-release/compare/v1.3.1...v1.3.2) (2023-03-03)
 
 
