@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/matejgerek/semantic-release/compare/v1.6.0...v1.6.1) (2023-03-03)
+
+
+### :bug: Bug Fixes
+
+* move cached node modules ([4e13a28](https://github.com/matejgerek/semantic-release/commit/4e13a28c251ce6b30bfac9aeb41f95233780c957))
+
 ## [1.6.0](https://github.com/matejgerek/semantic-release/compare/v1.5.0...v1.6.0) (2023-03-03)
 
 
