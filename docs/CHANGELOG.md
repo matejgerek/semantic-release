@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/matejgerek/semantic-release/compare/v1.4.0...v1.5.0) (2023-03-03)
+
+
+### :sparkles: Features
+
+* remove new line ([384f5f0](https://github.com/matejgerek/semantic-release/commit/384f5f060d22de02e0f83fcfff4218f1c72baa0e))
+
 ## [1.4.0](https://github.com/matejgerek/semantic-release/compare/v1.3.2...v1.4.0) (2023-03-03)
 
 
