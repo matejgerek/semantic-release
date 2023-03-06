@@ -1,3 +1,15 @@
+## [1.7.1](https://github.com/matejgerek/semantic-release/compare/v1.7.0...v1.7.1) (2023-03-06)
+
+
+### :up: Enhancements Improvements
+
+* add new type ([e23bf8c](https://github.com/matejgerek/semantic-release/commit/e23bf8cf12b8125c6fbdf696f5a220eb076d6d57))
+
+
+### :bug: Bug Fixes
+
+* add new fix ([e6aea4a](https://github.com/matejgerek/semantic-release/commit/e6aea4a7286c23c8b7116e23cc072dc4a1ff9ffd))
+
 ## [1.7.0](https://github.com/matejgerek/semantic-release/compare/v1.6.5...v1.7.0) (2023-03-06)
 
 
