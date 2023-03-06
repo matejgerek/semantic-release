@@ -23,7 +23,6 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
             return
         }
 
-
         // next release version of prerelease branch consists of {version}-{postfix}
         const newVersion = result.nextRelease.version.split('-')[0]
 
