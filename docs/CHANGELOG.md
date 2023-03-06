@@ -1,3 +1,11 @@
+## [1.6.4](https://github.com/matejgerek/semantic-release/compare/v1.6.3...v1.6.4) (2023-03-06)
+
+
+### :bug: Bug Fixes
+
+* add split version ([ca5a98c](https://github.com/matejgerek/semantic-release/commit/ca5a98c298c657969bdb70f09068e620299f0a73))
+* fix new version ([279e5ce](https://github.com/matejgerek/semantic-release/commit/279e5ce206735b76b9e614e072e23bf4747bc78b))
+
 ## [1.6.3](https://github.com/matejgerek/semantic-release/compare/v1.6.2...v1.6.3) (2023-03-06)
 
 
