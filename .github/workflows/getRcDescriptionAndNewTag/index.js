@@ -21,9 +21,12 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
         if(!result) {
             return
         }
-        console.log(result)
-        console.log(result.nextRelease)
-        core.setOutput('NEW_VERSION', result.nextRelease.version);
+
+
+        // next release version of prerelease branch consists of {version}-{postfix}
+        const newVersion = result.nextRelease.version.split('-')[0]
+
+        core.setOutput('NEW_VERSION', newVersion);
         core.setOutput('NEW_CHANGES', result.nextRelease.notes);
     } catch (error) {
         console.log(error);
