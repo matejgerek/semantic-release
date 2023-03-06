@@ -1,3 +1,16 @@
+## [1.7.0](https://github.com/matejgerek/semantic-release/compare/v1.6.5...v1.7.0) (2023-03-06)
+
+
+### :bug: Bug Fixes
+
+* remove empty line ([49f851c](https://github.com/matejgerek/semantic-release/commit/49f851c1f97e6824dbeabcb81b0205b6706913cc))
+* remove new line ([7c6a021](https://github.com/matejgerek/semantic-release/commit/7c6a02173678d76b83ef24be3e89a2e61e18a6b9))
+
+
+### :sparkles: Features
+
+* test feature ([235726a](https://github.com/matejgerek/semantic-release/commit/235726a03d91720ef815be7a2e5934cd0bd42765))
+
 ## [1.6.5](https://github.com/matejgerek/semantic-release/compare/v1.6.4...v1.6.5) (2023-03-06)
 
 
