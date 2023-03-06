@@ -1,3 +1,11 @@
+## [1.6.5](https://github.com/matejgerek/semantic-release/compare/v1.6.4...v1.6.5) (2023-03-06)
+
+
+### :bug: Bug Fixes
+
+* add new line ([203bb7e](https://github.com/matejgerek/semantic-release/commit/203bb7eb70e6d7c708cc110b9d22d4f7600a8186))
+* remove header ([6c3f49e](https://github.com/matejgerek/semantic-release/commit/6c3f49e81bbb3a23026646b245a9ecb21606497a))
+
 ## [1.6.4](https://github.com/matejgerek/semantic-release/compare/v1.6.3...v1.6.4) (2023-03-06)
 
 
