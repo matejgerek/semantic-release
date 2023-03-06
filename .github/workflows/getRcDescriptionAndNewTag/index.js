@@ -12,6 +12,7 @@ const getRcDescriptionAndNewTagWithSemanticRelease = async () => {
                 ["@semantic-release/release-notes-generator", {
                     writerOpts: {
                         commitPartial: commitPartialHbs,
+                        headerPartial: '',
                     }
                 }],
                 "@semantic-release/git"
